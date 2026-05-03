@@ -137,29 +137,14 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d"
+                src="/images/spices-hero.jpg"
                 alt="Premium Indian Spices"
                 width={800}
                 height={600}
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               {/* Overlay Stats */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl">
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-red-600">500+</div>
-                    <div className="text-xs text-gray-600">Happy Customers</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-orange-600">15+</div>
-                    <div className="text-xs text-gray-600">States Covered</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-green-600">100%</div>
-                    <div className="text-xs text-gray-600">Pure Quality</div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
 

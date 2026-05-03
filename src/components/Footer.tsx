@@ -97,14 +97,16 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Our Products</h4>
             <ul className="space-y-2">
               <li className="text-gray-400 text-sm">Red Chilli Powder</li>
-              <li className="text-gray-400 text-sm">Coriander Powder</li>
               <li className="text-gray-400 text-sm">Turmeric Powder</li>
-              <li className="text-gray-400 text-sm">Special Pickle Chilli</li>
+              <li className="text-gray-400 text-sm">Coriander Powder</li>
+              <li className="text-gray-400 text-sm">Dry Chilli (200gm)</li>
+              <li className="text-gray-400 text-sm">Ginger Garlic Paste</li>
               <li className="text-gray-400 text-sm">
                 <span className="bg-orange-600 text-white px-2 py-0.5 rounded text-xs">
                   More Coming Soon
                 </span>
               </li>
+              <li className="text-gray-400 text-sm">Special Chilli for Pickels</li>
             </ul>
           </div>
 
