@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     images: ['https://images.unsplash.com/photo-1596040033229-a9821ebd058d'],
   },
   alternates: {
-    canonical: 'https://rozspices.com',
+    canonical: 'https://www.rozspices.com',
   },
   icons: {
     icon: [

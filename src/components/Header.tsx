@@ -54,8 +54,14 @@ const Header = () => {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
-              <Image src="/images/Roz Spices Logo.png" alt="Roz Spices Logo" width={150} height={60} className="h-9 object-contain" />
+            <div className="flex-shrink-0 flex items-center h-full">
+              <Image
+                src="/images/Roz Spices Logo.png"
+                alt="Roz Spices Logo"
+                width={200}
+                height={80}
+                className="h-full w-auto max-w-[150px] sm:max-w-[200px] object-contain"
+              />
             </div>
 
             {/* Desktop Navigation */}
