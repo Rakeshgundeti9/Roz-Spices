@@ -25,7 +25,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
         <div className="relative w-full h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden border-4 border-[#008885] p-2 bg-red-600/10">
           <div className="relative w-full h-full overflow-hidden">
             <Image
-              src="/images/factory-image.jpg"
+              src="/images/factory-image.JPG"
               alt="Roz Spices Manufacturing Facility"
               fill
               className="object-cover object-center"
