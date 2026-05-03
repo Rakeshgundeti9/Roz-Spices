@@ -14,7 +14,7 @@ const HowItWorks = () => {
     {
       number: 1,
       icon: <Send className="w-8 h-8" />,
-      title: 'Request Free Sample',
+      title: 'Place a Trial Order',
       description:
         "Fill out the simple form and tell us which products you're interested in. We'll send you a free sample kit with no commitment.",
       color: 'from-blue-500 to-cyan-600',

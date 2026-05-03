@@ -1,6 +1,7 @@
 'use client'
 
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import Image from 'next/image'
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -18,12 +19,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">RS</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Roz Spices</h3>
-                <p className="text-sm text-gray-400">Premium Bulk Supplier</p>
+              <div className="inline-flex rounded-md bg-white/95 px-3 py-2 shadow-lg ring-1 ring-white/30">
+                <Image
+                  src="/images/Roz Spices Logo.png"
+                  alt="Roz Spices Logo"
+                  width={200}
+                  height={80}
+                  className="h-full w-auto max-w-[150px] sm:max-w-[200px] object-contain"
+                />
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
