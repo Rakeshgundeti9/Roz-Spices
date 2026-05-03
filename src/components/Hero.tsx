@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { Shield, Award, CheckCircle2, TrendingUp } from 'lucide-react'
+import { Shield, Award, CheckCircle2 } from 'lucide-react'
 
 interface HeroProps {
   onGetSampleClick: () => void
@@ -21,14 +21,32 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
       id="home"
       className="relative bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-red-400 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-400 rounded-full filter blur-3xl"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <div className="relative w-full h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden border-4 border-[#008885] p-2 bg-red-600/10">
+          <div className="relative w-full h-full overflow-hidden">
+            <Image
+              src="/images/factory-image.jpg"
+              alt="Roz Spices Manufacturing Facility"
+              fill
+              className="object-cover object-center"
+              priority
+              sizes="(max-width: 1280px) 100vw, 1280px"
+            />
+            {/* <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-red-50/70 to-transparent" /> */}
+          </div>
+        </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      {/* ── Background Blobs ── */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-red-400 rounded-full filter blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-400 rounded-full filter blur-3xl" />
+      </div>
+
+      {/* ── Main Content ── */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+
           {/* Left Content */}
           <div className="text-center lg:text-left" data-testid="hero-content">
             {/* Trust Badge */}
@@ -47,10 +65,10 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Premium quality spices for restaurants, distributors, and food businesses across
-              India.
-              <span className="font-semibold text-red-600"> Trusted by 500+ businesses</span> for
-              consistent quality and timely delivery.
+              Premium quality spices for HoReCa, Distributors and Retailers in the food stream across
+              India & Abroad.{' '}
+              <span className="font-semibold text-red-600">Trusted by 500+ businesses</span> for
+              consistent quality and Services.
             </p>
 
             {/* Trust Stats */}
@@ -77,7 +95,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                 className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
                 data-testid="hero-free-sample-btn"
               >
-                Get Free Sample Kit
+                Get Sample Kit
               </Button>
               <Button
                 onClick={() => scrollToSection('products')}
@@ -110,12 +128,12 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                     </span>
                   ))}
                 </div>
-                <p className="text-sm text-gray-600 font-medium">Rated 4.9/5 by 500+ clients</p>
+                <p className="text-sm text-gray-600 font-medium">Rated 4.9/5 by 500+ Customers</p>
               </div>
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right — Spice Product Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
@@ -123,15 +141,14 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                 alt="Premium Indian Spices"
                 width={800}
                 height={600}
-                className="w-full h-[400px] lg:h-[600px] object-cover"
-                priority
+                className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               {/* Overlay Stats */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
                     <div className="text-2xl font-bold text-red-600">500+</div>
-                    <div className="text-xs text-gray-600">Happy Clients</div>
+                    <div className="text-xs text-gray-600">Happy Customers</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-orange-600">15+</div>
@@ -144,15 +161,8 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                 </div>
               </div>
             </div>
-
-            {/* Floating Badge */}
-            <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yellow-400 to-orange-500 text-white px-6 py-4 rounded-full shadow-xl transform rotate-12">
-              <div className="text-center transform -rotate-12">
-                <TrendingUp size={24} className="mx-auto mb-1" />
-                <div className="text-xs font-bold">ISO Certified</div>
-              </div>
-            </div>
           </div>
+
         </div>
       </div>
     </section>

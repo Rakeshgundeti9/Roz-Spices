@@ -194,7 +194,9 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400 text-center md:text-left">
-              © 2024 Roz Spices Industries. All Rights Reserved.
+              Roz Spices Industries | Privacy Policy | Terms Of Use @2026 Designed by <a href="https://idm247.com/" className="text-blue-400 hover:text-blue-300 transition-colors" target="_blank" rel="noopener noreferrer">
+                Innovative Digital Media
+              </a> | All Rights Reserved
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">

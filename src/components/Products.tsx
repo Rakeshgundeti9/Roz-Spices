@@ -33,7 +33,7 @@ const Products = () => {
         'Rich, vibrant red color',
         'FSSAI certified - No fillers',
         'Perfect for restaurant kitchens',
-        '12+ months shelf life',
+        '9+ months shelf life',
       ],
       description:
         'Premium red chilli powder that gives your dishes the perfect color and heat. Lab-tested for purity with no artificial colors or additives.',
@@ -42,7 +42,7 @@ const Products = () => {
       id: 'coriander',
       name: 'Coriander Powder',
       tagline: 'Fresh Garden Aroma',
-      image: 'https://images.unsplash.com/photo-1581600140682-d4e68c8cde32',
+      image: '/Coriander50g.jpg',
       icon: <Leaf className="w-6 h-6" />,
       color: 'from-green-600 to-emerald-700',
       benefits: [
@@ -396,7 +396,7 @@ const Products = () => {
             <div className="text-sm text-gray-600">Tested Quality</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-md">
-            <div className="text-3xl font-bold text-green-600 mb-2">12+</div>
+            <div className="text-3xl font-bold text-green-600 mb-2">9+</div>
             <div className="text-sm text-gray-600">Months Shelf Life</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-md">
