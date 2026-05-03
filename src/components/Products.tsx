@@ -42,7 +42,7 @@ const Products = () => {
       id: 'coriander',
       name: 'Coriander Powder',
       tagline: 'Fresh Garden Aroma',
-      image: 'https://images.unsplash.com/photo-1581600140682-d4e68c8cde32',
+      image: '/Coriander50g.jpg',
       icon: <Leaf className="w-6 h-6" />,
       color: 'from-green-600 to-emerald-700',
       benefits: [

@@ -53,17 +53,9 @@ const Header = () => {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">RS</span>
-                </div>
-                <div>
-                  <h1 className="text-xl font-bold text-gray-900">Roz Spices</h1>
-                  <p className="text-xs text-gray-600">Premium Bulk Supplier</p>
-                </div>
-              </div>
-            </div>
+           <div className="flex-shrink-0 flex items-center">
+<img src="/RozSpicesLogo.png" alt="Roz Spices Logo" style={{ width: 'fit-content' }} className="h-9 object-contain" />   
+</div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">

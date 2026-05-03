@@ -47,10 +47,10 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Premium quality spices for restaurants, distributors, and food businesses across
-              India.
+              Premium quality spices for HoReCa, Distributors and Retailers in the food stream across
+              India & Abroad.
               <span className="font-semibold text-red-600"> Trusted by 500+ businesses</span> for
-              consistent quality and timely delivery.
+              consistent quality and Services.
             </p>
 
             {/* Trust Stats */}
@@ -77,7 +77,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                 className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
                 data-testid="hero-free-sample-btn"
               >
-                Get Free Sample Kit
+                Get Sample Kit
               </Button>
               <Button
                 onClick={() => scrollToSection('products')}
@@ -110,7 +110,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                     </span>
                   ))}
                 </div>
-                <p className="text-sm text-gray-600 font-medium">Rated 4.9/5 by 500+ clients</p>
+                <p className="text-sm text-gray-600 font-medium">Rated 4.9/5 by 500+ Customers</p>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
                     <div className="text-2xl font-bold text-red-600">500+</div>
-                    <div className="text-xs text-gray-600">Happy Clients</div>
+                    <div className="text-xs text-gray-600">Happy Customers</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-orange-600">15+</div>
@@ -145,13 +145,13 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
               </div>
             </div>
 
-            {/* Floating Badge */}
+            {/* Floating Badge
             <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yellow-400 to-orange-500 text-white px-6 py-4 rounded-full shadow-xl transform rotate-12">
               <div className="text-center transform -rotate-12">
                 <TrendingUp size={24} className="mx-auto mb-1" />
                 <div className="text-xs font-bold">ISO Certified</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

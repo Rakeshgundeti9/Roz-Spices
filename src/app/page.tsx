@@ -44,11 +44,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero onGetSampleClick={handleWhatsAppClick} />
 
-      {/* Why Choose Us */}
-      <WhyChooseUs />
-
       {/* Products */}
       <Products />
+
+      {/* Why Choose Us */}
+      <WhyChooseUs />
 
       {/* How It Works */}
       <HowItWorks />

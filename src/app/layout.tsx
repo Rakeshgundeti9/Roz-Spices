@@ -62,6 +62,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://rozspices.com',
   },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
