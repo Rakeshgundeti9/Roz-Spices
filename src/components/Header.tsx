@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Menu, X, Phone, Mail } from 'lucide-react'
+import Image from 'next/image'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -53,9 +54,9 @@ const Header = () => {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-           <div className="flex-shrink-0 flex items-center">
-<img src="/RozSpicesLogo.png" alt="Roz Spices Logo" style={{ width: 'fit-content' }} className="h-9 object-contain" />   
-</div>
+            <div className="flex-shrink-0 flex items-center">
+              <Image src="/images/Roz Spices Logo.png" alt="Roz Spices Logo" width={150} height={60} className="h-9 object-contain" />
+            </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">

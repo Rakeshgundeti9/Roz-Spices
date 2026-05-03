@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
       icon: <Clock className="w-8 h-8" />,
       title: 'Longer Shelf Life',
       description:
-        'Proper processing and packaging ensures 12+ months shelf life, reducing wastage for your business.',
+        'Proper processing and packaging ensures 9+ months shelf life, reducing wastage for your business.',
       color: 'from-purple-500 to-pink-600',
     },
     {
