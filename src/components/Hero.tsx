@@ -135,13 +135,13 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
 
           {/* Right — Spice Product Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-full h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-white group">
               <Image
-                src="/images/spices-hero.jpg"
+                src="/images/Roz Spices New Web 01.jpg"
                 alt="Premium Indian Spices"
-                width={800}
-                height={600}
-                className="w-full h-[400px] lg:h-[500px] object-cover"
+                fill
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+                priority
               />
               {/* Overlay Stats */}
               

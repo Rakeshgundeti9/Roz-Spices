@@ -31,7 +31,7 @@ export default function HomePage() {
   const handleWhatsAppClick = () => {
     const phoneNumber = '917569515541'
     const message = encodeURIComponent(
-      'Rakesh! I am interested in your bulk spice products. Please provide more information.'
+      'Hi sir! I am interested in your bulk spice products. Please provide more information.'
     )
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank')
   }

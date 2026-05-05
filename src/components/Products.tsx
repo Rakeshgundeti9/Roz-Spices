@@ -99,6 +99,108 @@ const productImages: Record<string, ProductImage[]> = {
       alt: 'Roz Ginger Garlic Paste 5kg pouch',
     },
   ],
+  'chilli-teekha': [
+    {
+      src: '/images/products/Chilli Teekha.png',
+      alt: 'Roz Red Chilli Powder TEEKHA pouch',
+    },
+  ],
+  '01': [
+    {
+      src: '/images/products/01.png',
+      alt: '01 product',
+    },
+  ],
+  '02': [
+    {
+      src: '/images/products/02.png',
+      alt: '02 product',
+    },
+  ],
+  '03': [
+    {
+      src: '/images/products/03.png',
+      alt: '03 product',
+    },
+  ],
+  '04': [
+    {
+      src: '/images/products/04.png',
+      alt: '04 product',
+    },
+  ],
+  '05': [
+    {
+      src: '/images/products/05.png',
+      alt: '05 product',
+    },
+  ],
+  '06': [
+    {
+      src: '/images/products/06.png',
+      alt: '06 product',
+    },
+  ],
+  '07': [
+    {
+      src: '/images/products/07.png',
+      alt: '07 product',
+    },
+  ],
+  '08': [
+    {
+      src: '/images/products/08.png',
+      alt: '08 product',
+    },
+  ],
+  '09': [
+    {
+      src: '/images/products/09.png',
+      alt: '09 product',
+    },
+  ],
+  '10': [
+    {
+      src: '/images/products/10.png',
+      alt: '10 product',
+    },
+  ],
+  '11': [
+    {
+      src: '/images/products/11.png',
+      alt: '11 product',
+    },
+  ],
+  '12': [
+    {
+      src: '/images/products/12.png',
+      alt: '12 product',
+    },
+  ],
+  '13': [
+    {
+      src: '/images/products/13.png',
+      alt: '13 product',
+    },
+  ],
+  '14': [
+    {
+      src: '/images/products/14.png',
+      alt: '14 product',
+    },
+  ],
+  '15': [
+    {
+      src: '/images/products/15.png',
+      alt: '15 product',
+    },
+  ],
+  '16': [
+    {
+      src: '/images/products/16.png',
+      alt: '16 product',
+    },
+  ],
 }
 
 const Products = () => {
@@ -203,10 +305,10 @@ const Products = () => {
         'Traditional Indian spice blend combining cardamom, cinnamon, cloves, and more. Essential for authentic North Indian cuisine.',
     },
     {
-      id: 'black-pepper',
-      name: 'Black Pepper Powder',
+      id: 'Teekha',
+      name: 'Red Chilli Powder TEEKHA',
       tagline: 'King of Spices',
-      images: [],
+      images: productImages['chilli-teekha'],
       color: 'from-gray-700 to-gray-900',
       benefits: [
         'Strong pungent flavor',
@@ -216,13 +318,13 @@ const Products = () => {
         'Premium grade pepper',
       ],
       description:
-        'Finest quality black pepper powder with strong aroma and sharp taste. Perfect for seasoning and enhancing flavor profiles.',
+        'Finest quality Chilli Teekha with strong aroma and sharp taste. Perfect for seasoning and enhancing flavor profiles.',
     },
     {
-      id: 'cumin',
-      name: 'Cumin Powder (Jeera)',
+      id: '01',
+      name: '01',
       tagline: 'Essential Indian Spice',
-      images: [],
+      images: productImages['01'],
       color: 'from-yellow-700 to-amber-800',
       benefits: [
         'Earthy, warm flavor',
@@ -236,10 +338,10 @@ const Products = () => {
     },
 
     {
-      id: 'cardamom',
-      name: 'Cardamom Powder',
+      id: '02',
+      name: '02',
       tagline: 'Queen of Spices',
-      images: [],
+    images: productImages['02'],
       color: 'from-green-500 to-teal-600',
       benefits: [
         'Intense aromatic flavor',
@@ -252,10 +354,10 @@ const Products = () => {
         'Premium cardamom powder from finest green pods. Adds exotic aroma to biryanis, desserts, and traditional beverages.',
     },
     {
-      id: 'clove',
-      name: 'Clove Powder',
+      id: '03',
+      name: '03',
       tagline: 'Powerful Aroma',
-      images: [],
+      images: productImages['03'],
       color: 'from-amber-800 to-yellow-900',
       benefits: [
         'Strong distinctive flavor',
@@ -268,10 +370,10 @@ const Products = () => {
         'Finest clove powder with intense aroma and flavor. Essential ingredient in spice blends and traditional Indian recipes.',
     },
     {
-      id: 'cinnamon',
-      name: 'Cinnamon Powder',
+      id: '04',
+      name: '04',
       tagline: 'Sweet & Aromatic',
-      images: [],
+      images: productImages['04'],
       color: 'from-orange-600 to-red-700',
       benefits: [
         'Sweet warm flavor',
@@ -284,10 +386,10 @@ const Products = () => {
         'Premium cinnamon powder with sweet, warm notes. Ideal for both savory dishes and desserts, beverages, and baking.',
     },
     {
-      id: 'fenugreek',
-      name: 'Fenugreek Powder (Methi)',
+      id: '05',
+      name: '05',
       tagline: 'Healthy & Flavorful',
-      images: [],
+      images: productImages['05'],
       color: 'from-yellow-600 to-amber-700',
       benefits: [
         'Slightly bitter, nutty flavor',
@@ -300,10 +402,10 @@ const Products = () => {
         'Quality fenugreek powder with distinctive flavor. Widely used in Indian pickles, curries, and traditional dishes for taste and health.',
     },
     {
-      id: 'mustard',
-      name: 'Mustard Powder',
+      id: '06',
+      name: '06',
       tagline: 'Pungent & Tangy',
-      images: [],
+      images: productImages['06'],
       color: 'from-yellow-500 to-yellow-700',
       benefits: [
         'Sharp, tangy flavor',
@@ -314,6 +416,168 @@ const Products = () => {
       ],
       description:
         'Premium mustard powder with pungent flavor. Essential for South Indian cuisine, pickles, and tempering dishes.',
+    },
+  
+
+    {
+      id: '07',
+      name: '07',
+      tagline: 'Exotic Flavor',
+      images: productImages['07'],
+      color: 'from-purple-600 to-pink-700',
+      benefits: [
+        'Unique exotic taste',
+        'Perfect for special dishes',
+        'Natural ingredients',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Exotic spice blend with unique flavors. Ideal for adventurous cooking and special recipes.',
+    },
+    {
+      id: '08',
+      name: '08',
+      tagline: 'Spicy Delight',
+      images: productImages['08'],
+      color: 'from-red-700 to-orange-800',
+      benefits: [
+        'Intense spicy flavor',
+        'Perfect for heat lovers',
+        'Natural heat source',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Spicy delight with intense heat. Perfect for those who love bold and spicy flavors.',
+    },
+    {
+      id: '09',
+      name: '09',
+      tagline: 'Mild Aroma',
+      images: productImages['09'],
+      color: 'from-green-700 to-blue-800',
+      benefits: [
+        'Mild aromatic flavor',
+        'Perfect for delicate dishes',
+        'Natural aroma',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Mild aroma spice with delicate flavors. Ideal for subtle and refined cooking.',
+    },
+    {
+      id: '10',
+      name: '10',
+      tagline: 'Bold Essence',
+      images: productImages['10'],
+      color: 'from-yellow-600 to-red-700',
+      benefits: [
+        'Bold essential flavor',
+        'Perfect for main dishes',
+        'Natural essence',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Bold essence spice with strong flavors. Essential for hearty and flavorful meals.',
+    },
+    {
+      id: '11',
+      name: '11',
+      tagline: 'Sweet Touch',
+      images: productImages['11'],
+      color: 'from-pink-600 to-purple-700',
+      benefits: [
+        'Sweet touch flavor',
+        'Perfect for desserts',
+        'Natural sweetness',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Sweet touch spice with natural sweetness. Ideal for desserts and sweet dishes.',
+    },
+    {
+      id: '12',
+      name: '12',
+      tagline: 'Tangy Twist',
+      images: productImages['12'],
+      color: 'from-orange-600 to-yellow-700',
+      benefits: [
+        'Tangy twist flavor',
+        'Perfect for pickles',
+        'Natural tanginess',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Tangy twist spice with natural tang. Perfect for pickles and tangy recipes.',
+    },
+    {
+      id: '13',
+      name: '13',
+      tagline: 'Herbal Fresh',
+      images: productImages['13'],
+      color: 'from-teal-600 to-green-700',
+      benefits: [
+        'Fresh herbal flavor',
+        'Perfect for salads',
+        'Natural herbs',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Fresh herbal spice with natural herbs. Ideal for salads and fresh dishes.',
+    },
+    {
+      id: '14',
+      name: '14',
+      tagline: 'Smoky Sensation',
+      images: productImages['14'],
+      color: 'from-gray-600 to-black',
+      benefits: [
+        'Smoky sensation flavor',
+        'Perfect for grilling',
+        'Natural smokiness',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Smoky sensation spice with natural smoke. Perfect for grilling and smoky flavors.',
+    },
+    {
+      id: '15',
+      name: '15',
+      tagline: 'Citrus Burst',
+      images: productImages['15'],
+      color: 'from-yellow-500 to-orange-600',
+      benefits: [
+        'Citrus burst flavor',
+        'Perfect for marinades',
+        'Natural citrus',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Citrus burst spice with natural citrus notes. Ideal for marinades and fresh flavors.',
+    },
+    {
+      id: '16',
+      name: '16',
+      tagline: 'Earthy Depth',
+      images: productImages['16'],
+      color: 'from-brown-600 to-yellow-700',
+      benefits: [
+        'Earthy depth flavor',
+        'Perfect for stews',
+        'Natural earthiness',
+        'High quality',
+        'Long shelf life',
+      ],
+      description:
+        'Earthy depth spice with deep flavors. Perfect for stews and rich dishes.',
     },
   ]
 
@@ -342,13 +606,13 @@ const Products = () => {
         {/* upcoming teaser */}
         <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-8 border-2 border-dashed border-orange-300">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 shadow-lg rounded-xl p-4 bg-white">
               <Image
-                src="https://images.unsplash.com/photo-1656497119922-068c6a5e1193"
-                alt="Coming Soon"
-                width={128}
-                height={128}
-                className="w-32 h-32 rounded-xl object-cover shadow-lg"
+                src='/images/Pickles.png'
+                alt="Special Chilli Powder for Pickle"
+                width={200}
+                height={200}
+                className="w-32 h-32 rounded-xl object-cover  transition-transform duration-500 ease-out hover:scale-105"
               />
             </div>
             <div className="flex-1 text-center md:text-left">
@@ -450,7 +714,7 @@ function ProductCard({ product }: { product: Product }) {
       data-testid={`product-${product.id}`}
     >
       {/* ── image stage ── */}
-      <div className="relative h-56 overflow-hidden bg-orange-50">
+      <div className="relative h-56 overflow-hidden bg-orange-50 group-hover:cursor-pointer">
 
         {available.length > 0 ? (
           available.map((img, i) => {
@@ -465,6 +729,8 @@ function ProductCard({ product }: { product: Product }) {
                 className={[
                   'object-contain p-5 absolute inset-0',
                   'transition-opacity duration-700 ease-in-out',
+                  'transition-transform duration-500 ease-out',
+                  'group-hover:scale-105',
                   i === index ? 'opacity-100' : 'opacity-0',
                 ].join(' ')}
                 onError={() => setFailedSrcs(s => new Set(s).add(img.src))}

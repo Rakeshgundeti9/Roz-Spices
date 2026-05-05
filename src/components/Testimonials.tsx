@@ -14,9 +14,9 @@ interface Testimonial {
 const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
-      name: 'Rajesh Kumar',
-      business: 'RB Restaurant Chain',
-      location: 'Hyderabad',
+      name: '"MandiKing" A Chain of Arabian Group of Restaurants',
+      business: 'Hyderabad And Elsewhere',
+      location: 'Mr. Ashfaq Hashmi & Mr. Mansoor',
       rating: 5,
       image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh',
       text: "We've been sourcing from Roz Spices for 3 years now. The consistency in quality is outstanding. Our customers love the authentic taste, and we've never had to worry about color or heat variations. Highly recommended for restaurant businesses!",
@@ -59,7 +59,7 @@ const Testimonials = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             What Our{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
-              Clients Say
+              Customers Say
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
