@@ -1,15 +1,9 @@
 'use client'
 
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, FileTerminal } from 'lucide-react'
 import Image from 'next/image'
 
 const Footer = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <footer id="contact" className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
@@ -19,15 +13,15 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="inline-flex rounded-md bg-white/95 px-3 py-2 shadow-lg ring-1 ring-white/30">
+              <a href="https://rozspices.com" target="_blank" rel="noopener noreferrer" className="inline-flex rounded-md">
                 <Image
-                  src="/images/Roz Spices Logo.png"
+                  src="/images/Bottom.png"
                   alt="Roz Spices Logo"
-                  width={200}
-                  height={80}
+                  width={300}
+                  height={90}
                   className="h-full w-auto max-w-[150px] sm:max-w-[200px] object-contain"
                 />
-              </div>
+              </a>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               India&apos;s most trusted bulk spice supplier, serving 500+ businesses with 100%
@@ -50,44 +44,44 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection('home')}
+                <a
+                  href="/#home"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Home
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('products')}
+                <a
+                  href="/#products"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Our Products
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('why-us')}
+                <a
+                  href="/#why-us"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Why Choose Us
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('testimonials')}
+                <a
+                  href="/#testimonials"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Testimonials
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('quote')}
+                <a
+                  href="/#quote"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Get Quote
-                </button>
+                
+                </a>
               </li>
             </ul>
           </div>
@@ -165,19 +159,25 @@ const Footer = () => {
               <h5 className="text-sm font-semibold mb-3">Follow Us</h5>
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/roz.spices#"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
                 >
                   <Facebook size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/rozspices/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition-colors"
                 >
-                  <Twitter size={18} />
+                  <span className="text-white font-black text-lg">X</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/rozspices?igsh=a3Q0eWs3MGluNGdn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-colors"
                 >
                   <Instagram size={18} />
@@ -197,23 +197,17 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-4">
             <p className="text-sm text-gray-400 text-center md:text-left">
-              Roz Spices Industries | Privacy Policy | Terms Of Use @2026 Designed by <a href="https://idm247.com/" className="text-blue-400 hover:text-blue-300 transition-colors" target="_blank" rel="noopener noreferrer">
-                Innovative Digital Media
-              </a> | All Rights Reserved
+Copyright © 2026 Roz Spices Industries.  <a href="https://idm247.com/" className="text-blue-400 hover:text-blue-300 transition-colors" target="_blank" rel="noopener noreferrer">
+              </a> | All Rights Reserved.
             </p>
-            <div className="flex gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Quality Guarantee
-              </a>
-            </div>
+            <a href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms-of-service" className="text-sm text-gray-400 hover:text-white transition-colors">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

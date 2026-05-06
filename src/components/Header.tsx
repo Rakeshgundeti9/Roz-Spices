@@ -55,13 +55,15 @@ const Header = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center h-full">
-              <Image
-                src="/images/Roz Spices Logo.png"
-                alt="Roz Spices Logo"
-                width={200}
-                height={80}
-                className="h-full w-auto max-w-[150px] sm:max-w-[200px] object-contain"
-              />
+              <a href="https://rozspices.com" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/Roz Spices Logo.png"
+                  alt="Roz Spices Logo"
+                  width={200}
+                  height={80}
+                  className="h-full w-auto max-w-[150px] sm:max-w-[200px] object-contain"
+                />
+              </a>
             </div>
 
             {/* Desktop Navigation */}

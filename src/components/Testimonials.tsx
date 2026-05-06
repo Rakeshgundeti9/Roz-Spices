@@ -23,32 +23,43 @@ const Testimonials = () => {
       highlight: 'Consistent Quality',
     },
     {
-      name: 'Anil Joshi',
-      business: 'Jyothi Traders',
-      location: 'Telangana',
+      name: 'R.R. Traders & Distributors',
+      business: 'Hyderabad',
+      location: 'Mr. Rizwan Ahmed',
       rating: 5,
       image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Anil',
       text: "As a distributor, I need reliable suppliers. Roz Spices delivers on time, every time. Their packaging is excellent, and the purity certifications make it easy to sell to my clients. Great partnership!",
       highlight: 'Timely Delivery',
     },
     {
-      name: 'Priya Sharma',
-      business: 'AA Agencies',
-      location: 'Mumbai',
-      rating: 5,
+      name: 'Jyothi Traders',
+      business: 'Metpally',
+      location: 'Mr. K Srinivas',
+      rating: 4,
       image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Priya',
       text: "The bulk pricing is very competitive, and the quality is never compromised. We tested multiple suppliers, but Roz Spices stood out for their purity and professional service. Their team is always responsive to our needs.",
       highlight: 'Best Value',
     },
     {
-      name: 'Mohammed Ali',
-      business: 'ANS Distributors',
-      location: 'Bangalore',
+      name: 'Peacock Group of Restaurants',
+      business: 'Karimnagar',
+      location: 'Mr. Abdul Razak ',
       rating: 5,
       image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Mohammed',
       text: "Working with Roz Spices has been a game-changer for our business. The lab-tested certificates give our customers confidence, and the longer shelf life means less wastage. Excellent product and service!",
       highlight: 'Lab Certified',
     },
+     {
+      name: 'Royal Bawarchi Restaurant',
+      business: 'Karimnagar',
+      location: 'Mr. Asad',
+      rating: 5,
+      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Mohammed',
+      text: "Working with Roz Spices has been a game-changer for our business. The lab-tested certificates give our customers confidence, and the longer shelf life means less wastage. Excellent product and service!",
+      highlight: 'Lab Certified',
+    },
+    
+      
   ]
 
   return (
@@ -139,18 +150,28 @@ const Testimonials = () => {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
             {[
-              { name: 'AA Agencies', color: 'from-red-500 to-pink-500' },
-              { name: 'Jyothi Traders', color: 'from-yellow-500 to-orange-500' },
-              { name: 'ANS Distributors', color: 'from-gray-700 to-gray-900' },
-              { name: 'RB Restaurant', color: 'from-red-600 to-red-800' },
-              { name: 'Anji Traders', color: 'from-orange-500 to-red-600' },
+              { name: 'AA Agencies', logo: 'MandiKing Logo' },
+              { name: 'Jyothi Traders', logo: 'Peacock Restarant logo' },
+              { name: 'ANS Distributors', logo: 'Royal Bawarchi Logo' },
+              { name: 'R.R. Traders and Distributers', color: 'from-red-600 to-red-800' },
+              { name: 'Jyothi Traders', color: 'from-orange-500 to-red-600' },
             ].map((client, index) => (
               <div key={index} className="w-full h-20 flex items-center justify-center">
-                <div
-                  className={`bg-gradient-to-r ${client.color} text-white px-6 py-3 rounded-lg font-bold text-center text-sm shadow-md hover:shadow-lg transition-shadow`}
-                >
-                  {client.name}
-                </div>
+                {client.logo ? (
+                  <Image
+                    src={`/images/${client.logo}.png`}
+                    alt={client.name}
+                    width={120}
+                    height={60}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                ) : (
+                  <div
+                    className={`bg-gradient-to-r ${client.color} text-white px-6 py-3 rounded-lg font-bold text-center text-sm shadow-md hover:shadow-lg transition-shadow`}
+                  >
+                    {client.name}
+                  </div>
+                )}
               </div>
             ))}
           </div>
