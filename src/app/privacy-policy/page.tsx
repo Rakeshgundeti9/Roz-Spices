@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Personal Information</h2>
             <p>
-              Roz Spices Industries is the licensed owner of the website rozspices.com ("The Site"). Roz Spices Industries respects your privacy. This Privacy Policy provides succinctly the manner your data is collected and used by Roz Spices Industries on the Site. As a visitor to the Site/ Customer you are advised to please read the Privacy Policy carefully. By accessing the services provided by the Site you agree to the collection and use of your data by Roz Spices Industries in the manner provided in this Privacy Policy.
+              Roz Spices Industries is the licensed owner of the website rozspices.com (&quot;The Site&quot;). Roz Spices Industries respects your privacy. This Privacy Policy provides succinctly the manner your data is collected and used by Roz Spices Industries on the Site. As a visitor to the Site/ Customer you are advised to please read the Privacy Policy carefully. By accessing the services provided by the Site you agree to the collection and use of your data by Roz Spices Industries in the manner provided in this Privacy Policy.
             </p>
           </section>
 
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">How do we collect the information?</h2>
             <p>
-              Roz Spices Industries will collect personally identifiable information about you only as part of a voluntary registration process, on-line survey or any combination thereof. The Site may contain links to other Web sites. Roz Spices Industries is not responsible for the privacy practices of such Web sites which it does not own, manage or control. The Site and third-party vendors, including Google, use first-party cookies (such as the Google Analytics cookie) and third-party cookies (such as the DoubleClick cookie) together to inform, optimize, and serve ads based on someone's past visits to the Site.
+              Roz Spices Industries will collect personally identifiable information about you only as part of a voluntary registration process, on-line survey or any combination thereof. The Site may contain links to other Web sites. Roz Spices Industries is not responsible for the privacy practices of such Web sites which it does not own, manage or control. The Site and third-party vendors, including Google, use first-party cookies (such as the Google Analytics cookie) and third-party cookies (such as the DoubleClick cookie) together to inform, optimize, and serve ads based on someone&apos;s past visits to the Site.
             </p>
           </section>
 
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">With whom will your information be shared?</h2>
             <p>
-              Roz Spices Industries will not use your financial information for any purpose other than to complete a transaction with you. Roz Spices Industries does not rent, sell or share your personal information and will not disclose any of your personally identifiable information to third parties. In cases where it has your permission to provide products or services you've requested and such information is necessary to provide these products or services the information may be shared with Roz Spices Industries business associates and partners. In addition Roz Spices Industries may use this information for promotional offers, to help investigate, prevent or take action regarding unlawful and illegal activities, suspected fraud, potential threat to the safety or security of any person, violations of the Site's terms of use or to defend against legal claims; special circumstances such as compliance with subpoenas, court orders, requests/order from legal authorities or law enforcement agencies requiring such disclosure.
+              Roz Spices Industries will not use your financial information for any purpose other than to complete a transaction with you. Roz Spices Industries does not rent, sell or share your personal information and will not disclose any of your personally identifiable information to third parties. In cases where it has your permission to provide products or services you&apos;ve requested and such information is necessary to provide these products or services the information may be shared with Roz Spices Industries business associates and partners. In addition Roz Spices Industries may use this information for promotional offers, to help investigate, prevent or take action regarding unlawful and illegal activities, suspected fraud, potential threat to the safety or security of any person, violations of the Site&apos;s terms of use or to defend against legal claims; special circumstances such as compliance with subpoenas, court orders, requests/order from legal authorities or law enforcement agencies requiring such disclosure.
             </p>
           </section>
 
