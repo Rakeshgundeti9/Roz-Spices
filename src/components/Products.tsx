@@ -620,7 +620,8 @@ const Products = () => {
                 Coming Soon
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Special Chilli Powder for Pickle
+                Special Chilli Powder for Pickles & Daily Use
+        
               </h3>
               <p className="text-gray-600">
                 Perfect blend specifically crafted for pickle manufacturers. Higher heat, vibrant color, extended shelf life.

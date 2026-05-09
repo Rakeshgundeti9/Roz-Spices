@@ -95,7 +95,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
                 className="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
                 data-testid="hero-free-sample-btn"
               >
-                Get Sample Kit
+                Get Trial Kit
               </Button>
               <Button
                 onClick={() => scrollToSection('products')}

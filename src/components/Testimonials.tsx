@@ -16,10 +16,10 @@ const Testimonials = () => {
     {
       name: '"MandiKing" A Chain of Arabian Group of Restaurants',
       business: 'Hyderabad And Elsewhere',
-      location: 'Mr. Ashfaq Hashmi & Mr. Mansoor',
+      location: 'Mr. Viqar Ahmed, Mr. Ashfaq Hashmi & Mr. Mansoor',
       rating: 5,
       image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh',
-      text: "We've been sourcing from Roz Spices for 3 years now. The consistency in quality is outstanding. Our customers love the authentic taste, and we've never had to worry about color or heat variations. Highly recommended for restaurant businesses!",
+      text: "We've been sourcing from Roz Spices for 6+ years now. The consistency in quality is outstanding. Our customers love the authentic taste, and we've never had to worry about color or heat variations. Highly recommended for restaurant businesses!",
       highlight: 'Consistent Quality',
     },
     {

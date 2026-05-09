@@ -183,7 +183,7 @@ const Footer = () => {
                   <Instagram size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/roz-spices-industries-107330409?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                   className="w-10 h-10 bg-gray-800 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
                 >
                   <Linkedin size={18} />
