@@ -1,66 +1,10 @@
 import Image from 'next/image'
 import { Star, Quote } from 'lucide-react'
+import { testimonials } from '@/data/testimonials'
 
-interface Testimonial {
-  name: string
-  business: string
-  location: string
-  rating: number
-  image: string
-  text: string
-  highlight: string
-}
 
 const Testimonials = () => {
-  const testimonials: Testimonial[] = [
-    {
-      name: '"MandiKing" A Chain of Arabian Group of Restaurants',
-      business: 'Hyderabad And Elsewhere',
-      location: 'Mr. Viqar Ahmed, Mr. Ashfaq Hashmi & Mr. Mansoor',
-      rating: 5,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh',
-      text: "We've been sourcing from Roz Spices for 6+ years now. The consistency in quality is outstanding. Our customers love the authentic taste, and we've never had to worry about color or heat variations. Highly recommended for restaurant businesses!",
-      highlight: 'Consistent Quality',
-    },
-    {
-      name: 'R.R. Traders & Distributors',
-      business: 'Hyderabad',
-      location: 'Mr. Rizwan Ahmed',
-      rating: 5,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Anil',
-      text: "As a distributor, I need reliable suppliers. Roz Spices delivers on time, every time. Their packaging is excellent, and the purity certifications make it easy to sell to my clients. Great partnership!",
-      highlight: 'Timely Delivery',
-    },
-    {
-      name: 'Jyothi Traders',
-      business: 'Metpally',
-      location: 'Mr. K Srinivas',
-      rating: 4,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Priya',
-      text: "The bulk pricing is very competitive, and the quality is never compromised. We tested multiple suppliers, but Roz Spices stood out for their purity and professional service. Their team is always responsive to our needs.",
-      highlight: 'Best Value',
-    },
-    {
-      name: 'Peacock Group of Restaurants',
-      business: 'Karimnagar',
-      location: 'Mr. Abdul Razak ',
-      rating: 5,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Mohammed',
-      text: "Working with Roz Spices has been a game-changer for our business. The lab-tested certificates give our customers confidence, and the longer shelf life means less wastage. Excellent product and service!",
-      highlight: 'Lab Certified',
-    },
-     {
-      name: 'Royal Bawarchi Restaurant',
-      business: 'Karimnagar',
-      location: 'Mr. Asad',
-      rating: 5,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Mohammed',
-      text: "Working with Roz Spices has been a game-changer for our business. The lab-tested certificates give our customers confidence, and the longer shelf life means less wastage. Excellent product and service!",
-      highlight: 'Lab Certified',
-    },
-    
-      
-  ]
+  
 
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -148,15 +92,20 @@ const Testimonials = () => {
           <h3 className="text-center text-xl font-bold text-gray-900 mb-8">
             Trusted by Leading Businesses
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
+          <div className="flex flex-wrap items-center justify-center gap-8">
             {[
               { name: 'AA Agencies', logo: 'MandiKing Logo' },
-              { name: 'Jyothi Traders', logo: 'Peacock Restarant logo' },
+              { name: 'Peacock Restaurant', logo: 'Peacock Restarant logo' },
               { name: 'ANS Distributors', logo: 'Royal Bawarchi Logo' },
+              { name: 'Best Bawarchi', logo: 'Bawarchi Biryani Logo' },
+              { name: 'Spicy Kitchen', logo: 'spicy kitchen' },
               { name: 'R.R. Traders and Distributers', color: 'from-red-600 to-red-800' },
-              { name: 'Jyothi Traders', color: 'from-orange-500 to-red-600' },
+              { name: 'Jyothi Traders', color: 'from-green-500 to-green-600' },
             ].map((client, index) => (
-              <div key={index} className="w-full h-20 flex items-center justify-center">
+              <div
+                key={index}
+                className="flex h-20 w-[calc(50%-1rem)] items-center justify-center md:w-[calc(20%-1.6rem)]"
+              >
                 {client.logo ? (
                   <Image
                     src={`/images/${client.logo}.png`}

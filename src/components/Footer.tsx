@@ -80,7 +80,7 @@ const Footer = () => {
                   href="/#quote"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                
+
                 </a>
               </li>
             </ul>
@@ -118,17 +118,35 @@ const Footer = () => {
                   <div className="text-sm">+91 7569515541</div>
                 </div>
               </a>
-
-              <a
-                href="mailto:info@rozspices.com"
-                className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors group"
+              <div
+                className="flex items-start gap-3 text-gray-400 transition-colors group"
               >
                 <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-500 group-hover:text-red-400" />
                 <div>
                   <div className="text-sm font-semibold text-white">Email</div>
-                  <div className="text-sm">info@rozspices.com</div>
+                  <a
+                    href="mailto:info@rozspices.com"
+                    onClick={(event) => {
+                      event.preventDefault()
+                      window.location.assign('mailto:info@rozspices.com')
+                    }}
+                    className="hover:text-white transition-colors hover:underline"
+                  >
+                    <div className="text-sm">info@rozspices.com</div>
+                  </a>
+                  <a
+                    href="mailto:rozspices@gmail.com"
+                    onClick={(event) => {
+                      event.preventDefault()
+                      window.location.assign('mailto:rozspices@gmail.com')
+                    }}
+                    className="hover:text-white transition-colors hover:underline"
+                  >
+                    <div className="text-sm">rozspices@gmail.com</div>
+                  </a>
                 </div>
-              </a>
+              </div>
+
 
               <div className="flex items-start gap-3 text-gray-400">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-blue-500" />
@@ -183,7 +201,9 @@ const Footer = () => {
                   <Instagram size={18} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/roz-spices-industries-107330409?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  href="https://in.linkedin.com/in/roz-spices-industries-107330409"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
                 >
                   <Linkedin size={18} />
@@ -199,7 +219,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <p className="text-sm text-gray-400 text-center md:text-left">
-Copyright © 2026 Roz Spices Industries.  <a href="https://idm247.com/" className="text-blue-400 hover:text-blue-300 transition-colors" target="_blank" rel="noopener noreferrer">
+              Copyright © 2026 Roz Spices Industries.  <a href="https://idm247.com/" className="text-blue-400 hover:text-blue-300 transition-colors" target="_blank" rel="noopener noreferrer">
               </a> | All Rights Reserved.
             </p>
             <a href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">

@@ -105,7 +105,7 @@ const HowItWorks = () => {
             Ready to get started? Contact us on WhatsApp for instant support!
           </p>
           <a
-            href="https://wa.me/917569515541?text=Hi!%20I%20am%20interested%20in%20your%20bulk%20spice%20products.%20Please%20provide%20more%20information."
+            href="https://wa.me/917569515541?text=Hi! I am interested in your spices. Please share more details."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all"

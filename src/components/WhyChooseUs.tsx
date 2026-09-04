@@ -33,13 +33,7 @@ const WhyChooseUs = () => {
         '3-5 days delivery across India. Track your shipment in real-time with guaranteed on-time delivery.',
       color: 'from-blue-500 to-cyan-600',
     },
-    {
-      icon: <Clock className="w-8 h-8" />,
-      title: 'Longer Shelf Life',
-      description:
-        'Proper processing and packaging ensures 9+ months shelf life, reducing wastage for your business.',
-      color: 'from-purple-500 to-pink-600',
-    },
+    
     {
       icon: <HeadphonesIcon className="w-8 h-8" />,
       title: 'Expert Consultation',

@@ -3,17 +3,10 @@
 import { useState } from 'react'
 import { Menu, X, Phone, Mail } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setMobileMenuOpen(false)
-    }
-  }
 
   return (
     <>
@@ -55,7 +48,7 @@ const Header = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center h-full">
-              <a href="https://rozspices.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://rozspices.com" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/Roz Spices Logo.png"
                   alt="Roz Spices Logo"
@@ -63,43 +56,43 @@ const Header = () => {
                   height={80}
                   className="h-full w-auto max-w-[150px] sm:max-w-[200px] object-contain"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <button
-                onClick={() => scrollToSection('home')}
+              <Link
+                href="/#home"
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors"
               >
                 Home
-              </button>
-              <button
-                onClick={() => scrollToSection('products')}
+              </Link>
+              <Link
+                href="/#products"
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors"
               >
                 Products
-              </button>
-              <button
-                onClick={() => scrollToSection('why-us')}
+              </Link>
+              <Link
+                href="/#why-us"
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors"
               >
                 Why Us
-              </button>
-              <button
-                onClick={() => scrollToSection('testimonials')}
+              </Link>
+              <Link
+                href="/#testimonials"
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors"
               >
                 Testimonials
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
+              </Link>
+              <Link
+                href="/#contact"
                 className="text-gray-700 hover:text-red-600 font-medium transition-colors"
               >
                 Contact
-              </button>
+              </Link>
               <a
-                href="https://wa.me/917569515541?text=Hi!%20I%20am%20interested%20in%20your%20bulk%20spice%20products.%20Please%20provide%20more%20information."
+                href="https://wa.me/917569515541?text=Hi! I am interested in your spices. Please share more details."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all inline-flex items-center gap-2"
@@ -128,38 +121,43 @@ const Header = () => {
           {mobileMenuOpen && (
             <div className="md:hidden py-4 border-t">
               <div className="flex flex-col gap-4">
-                <button
-                  onClick={() => scrollToSection('home')}
+                <Link
+                  href="/#home"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-gray-700 hover:text-red-600 font-medium text-left"
                 >
                   Home
-                </button>
-                <button
-                  onClick={() => scrollToSection('products')}
+                </Link>
+                <Link
+                  href="/#products"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-gray-700 hover:text-red-600 font-medium text-left"
                 >
                   Products
-                </button>
-                <button
-                  onClick={() => scrollToSection('why-us')}
+                </Link>
+                <Link
+                  href="/#why-us"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-gray-700 hover:text-red-600 font-medium text-left"
                 >
                   Why Us
-                </button>
-                <button
-                  onClick={() => scrollToSection('testimonials')}
+                </Link>
+                <Link
+                  href="/#testimonials"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-gray-700 hover:text-red-600 font-medium text-left"
                 >
                   Testimonials
-                </button>
-                <button
-                  onClick={() => scrollToSection('contact')}
+                </Link>
+                <Link
+                  href="/#contact"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-gray-700 hover:text-red-600 font-medium text-left"
                 >
                   Contact
-                </button>
+                </Link>
                 <a
-                  href="https://wa.me/917569515541?text=Hi!%20I%20am%20interested%20in%20your%20bulk%20spice%20products.%20Please%20provide%20more%20information."
+                  href="https://wa.me/917569515541?text=Hi! I am interested in your spices. Please share more details."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-semibold w-full px-6 py-2.5 rounded-lg transition-all inline-flex items-center justify-center gap-2"
