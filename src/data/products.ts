@@ -28,7 +28,7 @@ export const productImages: Record<string, ProductImage[]> = {
     //   alt: 'Roz Red Chilli Powder 200g pouch',
     // },
     {
-      src: '/images/products/Red Chilli Powder 500g.png',
+      src: '/images/Products/Red Chilli Powder 500g.png',
       alt: 'Roz Red Chilli Powder 500g pouch',
     },
   ],
@@ -46,7 +46,7 @@ export const productImages: Record<string, ProductImage[]> = {
     //   alt: 'Roz Turmeric Powder 200g pouch',
     // },
     {
-      src: '/images/products/Turmeric Powder 500g.png',
+      src: '/images/Products/Turmeric Powder 500g.png',
       alt: 'Roz Turmeric Powder 500g pouch',
     },
   ],
@@ -64,13 +64,13 @@ export const productImages: Record<string, ProductImage[]> = {
     //   alt: 'Roz Coriander Powder 200g pouch',
     // },
     {
-      src: '/images/products/Coriander Powder 500g.png',
+      src: '/images/Products/Coriander Powder 500g.png',
       alt: 'Roz Coriander Powder 500g pouch',
     },
   ],
   'dry-chilli': [
     {
-      src: '/images/products/Dried Chilli 200g.png',
+      src: '/images/Products/Dried Chilli 200g.png',
       alt: 'Roz Dried Chilli pouch',
     },
   ],
@@ -88,13 +88,13 @@ export const productImages: Record<string, ProductImage[]> = {
     //   alt: 'Roz Ginger Garlic Paste 1kg pouch',
     // },
     {
-      src: '/images/products/Ginger Garlic Paste 5kg.png',
+      src: '/images/Products/Ginger Garlic Paste 5kg.png',
       alt: 'Roz Ginger Garlic Paste 5kg pouch',
     },
   ],
   'chilli-teekha': [
     {
-      src: '/images/products/Chilli Teekha.png',
+      src: '/images/Products/Chilli Teekha.png',
       alt: 'Roz Red Chilli Powder TEEKHA pouch',
     },
   ],
