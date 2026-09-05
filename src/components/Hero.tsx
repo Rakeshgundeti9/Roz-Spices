@@ -19,7 +19,7 @@ const Hero = ({ onGetSampleClick }: HeroProps) => {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 overflow-hidden"
+      className="relative scroll-mt-20 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <div className="relative w-full h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden border-4 border-[#008885] p-2 bg-red-600/10">
